@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Asigment</title>
+</head>
+
+<body>
+    <script>
+
+        var number_a = prompt("Please enter the value for the first number");
+        var operation = prompt("Please enter the operation u want to make");
+        var number_b = prompt("Please enter the value for the second number");
+
+        var value_a = parseFloat(number_a);
+        var value_b = parseFloat(number_b);
+
+        if (!isNaN(value_a) && !isNaN(value_b)) {
+            if (operation == '+') {
+                var result = value_a + value_b;
+                alert("The result is:" + result)
+            } else if (operation == '-') {
+                var result = value_a - value_b;
+                alert("The result is:" + result)
+            } else if (operation == '*') {
+                var result = value_a * value_b;
+                alert("The result is:" + result)
+            } else if (operation == '/') {
+                if (value_b != 0) {
+                    var result = value_a / value_b;
+                    alert("The result is:" + result)
+                } else {
+                    alert("Division by 0 is not posible")
+                }
+            } else {
+                alert("operation " + operation + " is not an elementary one")
+            }
+
+        } else {
+            alert("The value of one of the operand is not numeric")
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
